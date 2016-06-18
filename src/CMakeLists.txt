@@ -1,1 +1,1 @@
-add_subdirectory(api)
+add_executable( stocktrader main.cpp)
