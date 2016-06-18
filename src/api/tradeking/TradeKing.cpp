@@ -22,15 +22,5 @@
 //*
 //* Project: StockTrader
 //* Author:  Max Kotlan
-//* File:    TradeKing.hpp
+//* File:    TradeKing.cpp
 //*
-
-#pragma once
-
-#include "../api.hpp"
-
-class TradeKing : api{
-  public:
-  private:
-
-}

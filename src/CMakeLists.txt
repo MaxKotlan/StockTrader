@@ -1,1 +1,6 @@
-add_executable( stocktrader main.cpp)
+set(API ${CMAKE_SOURCE_DIR}/src/api/)
+set(TRADEKING ${API}/tradeking)
+find_package ( cppnetlib 0.11.0 REQUIRED )
+include_directories ( ${CPPNETLIB_INCLUDE_DIRS} )
+add_executable( stocktrader main.cpp ${API}/api.cpp ${API}/api.hpp ${TRADEKING}/TradeKing.cpp ${TRADEKING}/TradeKing.hpp)
+target_link_libraries ( stocktrader ${CPPNETLIB_LIBRARIES} )
